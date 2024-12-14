@@ -6,7 +6,7 @@ export default defineConfig({
   server: { port: 5173 },
   build: {
     rollupOptions: {
-      external: ['react-router-dom'], // Externalize react-router-dom to avoid build issues
+      external: ['react-router-dom','react-toastify'], // Externalize react-router-dom to avoid build issues
     },
   },
 });
