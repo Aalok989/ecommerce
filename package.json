@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.0.2",
-    "react-toastify": "^10.0.6"
-  }
-}
