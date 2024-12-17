@@ -19,7 +19,7 @@ connectCloudinary( )
 
 app.use(express.json())
 app.use(cors({
-    origin: 'https://store-kappa-woad.vercel.app/', // Allow only this origin
+    origin: 'https://store-nine-opal.vercel.app/', // Allow only this origin
   }));
 
 // api endpoints
