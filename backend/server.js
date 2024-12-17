@@ -17,10 +17,15 @@ connectCloudinary( )
 
 // middlewares
 
-app.use(express.json())
-app.use(cors({
-    origin: 'https://store-nine-opal.vercel.app', // Allow only this origin
-  }));
+app.use(express.json());
+app.use(
+  cors({
+    origin: [
+      'https://store-nine-opal.vercel.app',
+      'https://store-admin-self.vercel.app',
+    ], // Allow these two origins
+  })
+);
 
 // api endpoints
 app.use('/api/user', userRouter)
