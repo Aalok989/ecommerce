@@ -19,6 +19,9 @@ connectCloudinary( )
 
 app.use(express.json())
 app.use(cors())
+app.use(cors({
+    origin: 'https://store-kappa-woad.vercel.app/', // Allow only this origin
+  }));
 
 // api endpoints
 app.use('/api/user', userRouter)
